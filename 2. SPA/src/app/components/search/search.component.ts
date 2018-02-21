@@ -9,11 +9,13 @@ import { HeroesService, Heroe } from '../../services/heroes.services';
 })
 export class SearchComponent implements OnInit {
   heroes:Heroe[];
+  text:string;
   constructor( private activatedRoute: ActivatedRoute,
                private _heroeService: HeroesService ) { }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe( params => {
+      this.text = params['text'];
       this.heroes = this._heroeService.searchHeroes(params['text']);
   } );
   }

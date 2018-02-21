@@ -1,6 +1,13 @@
 <h1>
-  <small>Marvel & DC</small> Heroes</h1>
+   Heroes found, matches: {{ text }}</h1>
   <hr>
+  <div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+    <div class="div col-md-12">
+      <div class="alert alert-info" role="alert">
+        Heroes not found
+      </div>
+    </div>
+  </div>
 <div class="card-columns">
   <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
     <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
