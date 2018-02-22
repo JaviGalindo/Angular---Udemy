@@ -12,6 +12,8 @@ import { NavbarComponent } from './components/share/navbar/navbar.component';
 
 import { SpotifyService } from "./services/spotify.service";
 import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { ArtistComponent } from './components/artist/artist.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { SinfotoPipe } from './pipes/sinfoto.pipe';
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    SinfotoPipe
+    SinfotoPipe,
+    ArtistComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
