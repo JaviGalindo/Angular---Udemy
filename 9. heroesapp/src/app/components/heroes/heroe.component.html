@@ -1,5 +1,6 @@
-<h3>Hero <small>name...</small></h3>
+<h3>Hero <small>{{heroe.name}}</small></h3>
 <button [routerLink] = "['/heroes']" class="btn btn-outline-danger">Return</button>
+<button (click) = "addNew(forma)" class="btn btn-outline-success">New Heroe</button>
 <hr>
 
 <div class="row animated fadeIn fast">
